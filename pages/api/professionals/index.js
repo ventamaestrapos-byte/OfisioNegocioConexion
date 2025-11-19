@@ -75,6 +75,23 @@ export default async function handler(req, res) {
         });
       }
 
+      // Validate coordinates format: [longitude, latitude]
+      if (
+        !Array.isArray(coordinates) ||
+        coordinates.length !== 2 ||
+        typeof coordinates[0] !== 'number' ||
+        typeof coordinates[1] !== 'number' ||
+        coordinates[0] < -180 ||
+        coordinates[0] > 180 ||
+        coordinates[1] < -90 ||
+        coordinates[1] > 90
+      ) {
+        return res.status(400).json({
+          success: false,
+          message: 'Invalid coordinates. Must be [longitude, latitude] with valid ranges.',
+        });
+      }
+
       // Check if profile already exists for this user
       const existingProfile = await ProfessionalProfile.findOne({ userId });
       if (existingProfile) {
