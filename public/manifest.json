@@ -1,0 +1,19 @@
+{
+  "id": "https://oficionegocioconexion.com/",
+  "name": "Oficio Negocio Conexión",
+  "short_name": "OficioConexión",
+  "start_url": "https://oficionegocioconexion.com/",
+  "scope": "https://oficionegocioconexion.com/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f5a623",
+  "description": "Conectamos oficios, impulsamos negocios.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
