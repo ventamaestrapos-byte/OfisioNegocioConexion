@@ -1,9 +1,5 @@
-const withPWA = require("next-pwa")({
-  dest: "public",
-  register: true,
-  skipWaiting: true,
-});
-
-module.exports = withPWA({
-  reactStrictMode: false,
-});
+module.exports = {
+  env: {
+    MAPBOX_TOKEN: ""
+  }
+}
