@@ -8,3 +8,26 @@ body {
   color: #111827;
 }
 a { color: #0366d6; text-decoration: none; }
+
+/* Global button styles for centered and aligned buttons */
+button {
+  display: block;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Centered container for forms and content */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  button {
+    max-width: 100%;
+  }
+}
