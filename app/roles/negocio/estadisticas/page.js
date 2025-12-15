@@ -2,6 +2,8 @@ import { connectToDatabase } from "../../../../lib/mongoose";
 import Negocio from "../../../../lib/models/Negocio";
 import Promocion from "../../../../lib/models/Promocion";
 
+export const dynamic = "force-dynamic";
+
 export default async function EstadisticasPage() {
   await connectToDatabase();
 

@@ -2,6 +2,8 @@ import { connectToDatabase } from "../../../../lib/mongoose";
 import Negocio from "../../../../lib/models/Negocio";
 import PerfilFormClient from "./PerfilFormClient";
 
+export const dynamic = "force-dynamic";
+
 export default async function PerfilNegocioPage() {
   await connectToDatabase();
 
